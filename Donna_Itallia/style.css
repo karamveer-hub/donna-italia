@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+div{
+    width: 100%;
+}
+
+.display_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.display_flex_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.bg-green{
+    background: #026933;
+    margin: 0 calc(5/1920 * 100vw);padding: 0 calc(5/1920 * 100vw);
+}
+.bg-red{
+    background: #B92B25;
+    margin: 0 calc(5/1920 * 100vw);padding: 0 calc(5/1920 * 100vw);
+}
+.bg-yellow{
+    background: #A47A29;
+    margin: 0 calc(5/1920 * 100vw);padding: 0 calc(4/1920 * 100vw);
+}
+.bg-blue{
+    background: #010151;
+    padding: calc(5/1920 * 100vw);
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Medium.woff2') format('woff2'),
+        url('Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gotham Thin';
+    src: url('Gotham-Thin.woff2') format('woff2'),
+        url('Gotham-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('Gotham-Light.woff2') format('woff2'),
+        url('Gotham-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+html{
+    /* height: 100vh;
+    width: 100vw; */
+    font-size: calc(22/1920 * 100vw);
+    color: #CBCBCB;
+}
+body{
+    height: 100vh;
+    background-image: url('onlyBg.jpg');
+    background: linear-gradient(45deg,#010215, transparent, #010215), url('onlyBg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+    padding: 3%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    /* border: calc(2/1920 * 100vw) solid red; */
+    max-width: 1780px;
+    margin: 0 auto;
+    padding: calc(6/1920 * 100vw);
+}
+.section1{
+    height: 53%;
+    align-items: flex-start;
+}
+.section > div{
+    height: 100%;
+}
+.section .first_section{
+    width: 22%;
+    font-size: calc(40/1920 * 100vw);
+    /* border: calc(1/1920 * 100vw) solid red; */
+    /* background: red; */
+}
+.section .second_section{
+    width: 37%;
+    border-right: calc(1/1920 * 100vw) solid white;
+}
+.section  .first_div .heading{
+    justify-content: flex-start;
+    padding:0 calc(15/1920 * 100vw);
+    font-family: 'Gotham';
+}
+.section  .third_section .first_div .heading{
+    padding:0 0 0  calc(15/1920 * 100vw);
+}
+.section  .first_div .heading div:nth-child(1){
+    width: 70%;
+    justify-content: flex-start;
+
+}
+.section  .third_section .first_div .heading div:nth-child(1){
+    width: 80%;
+    justify-content: flex-start;
+
+}
+.section .first_div .heading div:nth-child(2){
+    width: 30%;
+}
+.section .first_div .content .pizza_info{
+    width: 70%;
+}
+.section .third_section .first_div .content .pizza_info{
+    width: 90%;
+}
+.section  .first_div .content .pizza_name{
+    justify-content: flex-start;
+    font-family: 'Gotham';
+    
+}
+.section  .first_div .content .description{
+    font-family: 'Gotham';
+    font-size: calc(19/1920 * 100vw);
+    
+}
+.section .first_div .content{
+    margin: calc(9/1920 * 100vw) calc(10/1920 * 100vw) 0 0;
+    padding: calc(5/1920 * 100vw) calc(15/1920 * 100vw);
+    align-items: flex-start;
+
+}
+.section .third_section .first_div .content{
+    margin: calc(10/1920 * 100vw) calc(10/1920 * 100vw) 0 0;
+    padding: 0px 0px 0 calc(22/1920 * 100vw);
+    align-items: flex-start;
+
+}
+.section  .first_div .content .pizza_info .pizza_name p:nth-child(1){
+   font-size: calc(32/1920 * 100vw);
+   margin-right: calc(12/1920 * 100vw);
+}
+.section .first_div .content .pizza_info .pizza_name p:nth-child(2){
+   font-size: calc(17/1920 * 100vw);
+   font-family: 'Gotham Light';
+
+}
+.section  .first_div .content .pizza_price{
+    width: 29%;
+    font-family: 'Gotham';
+    font-size: calc(27/1920 * 100vw);
+}
+.section  .first_div .heading img{
+    width: 20px;
+
+}
+.section .third_section{
+    width: 40%;
+}
+
+.section2{
+    height: 47%;
+}
+.section2 .second_section{
+    width: 48%;
+    padding: calc(40/1920 * 100vw) 0;
+    border: none;
+    border-top: calc(1/1920 * 100vw) solid white;
+}
+.section2 .second_section .heading{
+    padding: 0 calc(50/1920 * 100vw) 0 calc(70/1920 * 100vw);
+}
+.section2 .second_section .heading div:nth-child(1){
+    width: 80%;
+}
+.section2 .second_section .content{
+    padding: 0 calc(40/1920 * 100vw) 0 calc(40/1920 * 100vw);
+    margin-top: calc(13/1920 * 100vw);
+}
+.section2 .second_section .content .pizza_info{
+    width: 80%;
+    padding: 0 0 0 calc(10/1920 * 100vw);
+}
+
+.section2 .second_section .content img{
+    width: 20px;
+}
+.section2 .third_section{
+    width: 37%;
+    padding: 0 calc(35/1920 * 100vw) 0 calc(45/1920 * 100vw);
+}
+.section2 .first_section{
+    width: 24%;
+}
+
+
+.section2  .third_section h2:nth-child(1){
+    width: 57%;
+    margin-left: calc(40/1920 * 100vw);
+    font-family: 'Gotham';
+}
+.section2  .third_section h2:last-child{
+    font-family: 'Gotham';
+    width: 100%;
+    position: relative;
+    top: calc(30/1920 * 100vw);
+    font-size: calc(26/1920 * 100vw);
+    padding: calc(10/1920 * 100vw) calc(18/1920 * 100vw);
+}
+.section2 .third_section .first_div{
+   position: relative;
+   top: calc(-20/1920 * 100vw);
+   z-index: -1;
+}
+.section2 .third_section .second_div{
+
+}
+.section2 .third_section .inner_div {
+    font-family: 'Gotham';
+    padding: calc(20/1920 * 100vw) calc(10/1920 * 100vw) 0 calc(36/1920 * 100vw);
+}
+.section2 .third_section .inner_div p{
+    font-size:calc(27/1920 * 100vw);
+}
+.section2 .third_section .first_div .inner_div .display_flex{
+    padding: calc(6/1920 * 100vw);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.veg-meals{
+    width: 70%;
+    border-right: calc(4/1920 * 100vw) solid blue;
+}
+.section2 .third_section .content {
+    padding: 0 0 0 calc(15/1920 * 100vw) !important;
+    margin: 0 !important;
+}
+.section2 .third_section .second_div .inner_div {
+    padding: calc(10/1920 * 100vw) calc(24/1920 * 100vw) 0 calc(36/1920 * 100vw);
+}
+.section2 .third_section .second_div .inner_div p:nth-child(1) span{
+    font-size: calc(20/1920 * 100vw);
+}
+.section2 .third_section .second_div .inner_div p:nth-child(2){
+    font-size: calc(40/1920 * 100vw);
+    padding-bottom: calc(12/1920 * 100vw);
+}
+
