@@ -124,7 +124,7 @@ body{
 
 
 .section1 .second_section .first_div .content{
-    padding: 0 calc(40/1920 * 100vw);
+    padding: 0 calc(35/1920 * 100vw);
 }
 .section1 .second_section .first_div .content .pizza_price{
     justify-content: flex-end;
@@ -155,6 +155,10 @@ body{
 .section  .third_section .first_div .heading div:nth-child(1){
     width: 80%;
     justify-content: flex-start;
+
+}
+.section  .third_section .first_div .heading div:nth-child(1) .bg-green,.section  .third_section .first_div .heading div:nth-child(1) .bg-red{
+    margin: 0;
 
 }
 .section .first_div .heading div:nth-child(2){
@@ -223,7 +227,7 @@ body{
 }
 .section  .first_div .content .pizza_info .pizza_name > img{
    width: calc(20/1920 * 100vw);
-   margin: calc(10/1920 * 100vw) calc(20/1920 * 100vw) 0 0 ;
+   margin: calc(10/1920 * 100vw) calc(10/1920 * 100vw) 0 0 ;
    /* vertical-align: sub; */
 }
 .section  .first_div .content .pizza_info .pizza_name p:nth-child(2){
@@ -371,7 +375,7 @@ body{
 
 }
 .section1 .third_section .first_div .content{
-    padding: 0  calc(40/1920 * 100vw) !important;
+    padding: 0  calc(35/1920 * 100vw) !important;
     margin-top: calc(12/1920 * 100vw) !important;
 
 }.section2 .third_section:nth-child(2) .first_div .nonveg-meals .content{
