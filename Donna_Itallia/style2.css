@@ -40,7 +40,25 @@ div{
     padding: calc(5/1920 * 100vw) calc(10/1920 * 100vw);
 }
 @font-face {
-    font-family: 'Gotham';
+    font-family: 'Trenda';
+    src: url('Trenda-Bold.woff2') format('woff2'),
+        url('Trenda-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITF Rupee';
+    src: url('ITFRupee.woff2') format('woff2'),
+        url('ITFRupee.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trenda';
     src: url('Gotham-Medium.woff2') format('woff2'),
         url('Gotham-Medium.woff') format('woff');
     font-weight: 500;
@@ -134,12 +152,12 @@ body{
 .section  .first_div .heading{
     justify-content: flex-start;
     /* padding:0 calc(15/1920 * 100vw); */
-    font-family: 'Gotham';
+    font-family: 'Trenda';
 }
 .section1  .first_div .heading{
     justify-content: flex-start;
     padding:0 calc(35/1920 * 100vw);
-    font-family: 'Gotham';
+    font-family: 'Trenda';
 }
 .section2 > .third_section:nth-child(1) > .first_div > .heading{
     /* padding:0 0 0  calc(15/1920 * 100vw); */
@@ -172,12 +190,12 @@ body{
 }
 .section  .first_div .content .pizza_name{
     justify-content: flex-start;
-    font-family: 'Gotham';
+    font-family: 'Trenda';
     align-items: flex-start;
     
 }
 .section  .first_div .content .description{
-    font-family: 'Gotham';
+    font-family: 'Trenda';
     font-size: calc(19/1920 * 100vw);
     padding-left: calc(40/1920 * 100vw);
     
@@ -247,7 +265,7 @@ body{
 }
 .section  .first_div .content .pizza_price{
     width: unset;
-    font-family: 'Gotham';
+    font-family: 'Trenda';
     font-size: calc(27/1920 * 100vw);
     justify-content: flex-end;
 }
@@ -318,10 +336,10 @@ body{
 .section2  .third_section h2:nth-child(1){
     width: 57%;
     margin-left: calc(20/1920 * 100vw);
-    font-family: 'Gotham';
+    font-family: 'Trenda';
 }
 .section2  .third_section h2:last-child{
-    font-family: 'Gotham';
+    font-family: 'Trenda';
     width: 100%;
     position: relative;
     top: calc(30/1920 * 100vw);
@@ -338,7 +356,7 @@ body{
 
 }
 .section2 .third_section .inner_div {
-    font-family: 'Gotham';
+    font-family: 'Trenda';
     padding: calc(20/1920 * 100vw) calc(10/1920 * 100vw) 0 calc(20/1920 * 100vw);
 }
 .section2 .third_section .inner_div p{
