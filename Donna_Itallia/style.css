@@ -34,6 +34,9 @@ div{
     background: #010151;
     padding: calc(5/1920 * 100vw);
 }
+.fontRupee{
+    font-family: 'ITF Rupee';
+}
 @font-face {
     font-family: 'Trenda';
     src: url('Gotham-Medium.woff2') format('woff2'),

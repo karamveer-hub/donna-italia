@@ -39,6 +39,9 @@ div{
     margin-left: calc(60/1920 * 100vw);
     padding: calc(5/1920 * 100vw) calc(10/1920 * 100vw);
 }
+.fontRupee{
+    font-family: 'ITF Rupee';
+}
 @font-face {
     font-family: 'Trenda';
     src: url('Trenda-Bold.woff2') format('woff2'),
@@ -197,7 +200,7 @@ body{
 .section  .first_div .content .description{
     font-family: 'Trenda';
     font-size: calc(19/1920 * 100vw);
-    padding-left: calc(40/1920 * 100vw);
+    padding-left: calc(30/1920 * 100vw);
     
 }
 .section .first_div .content{
@@ -328,6 +331,9 @@ body{
 .section2 .third_section:nth-child(2){
     height: 19%;
 }
+.section2 .third_section:nth-child(2) .veg-meals .content{
+    margin: 0 !important;
+}
 .section2 .first_section{
     width: 24%;
 }
@@ -357,7 +363,7 @@ body{
 }
 .section2 .third_section .inner_div {
     font-family: 'Trenda';
-    padding: calc(20/1920 * 100vw) calc(10/1920 * 100vw) 0 calc(20/1920 * 100vw);
+    padding: calc(20/1920 * 100vw) calc(0/1920 * 100vw) calc(10/1920 * 100vw) calc(20/1920 * 100vw);
 }
 .section2 .third_section .inner_div p{
     font-size:calc(27/1920 * 100vw);
@@ -366,7 +372,7 @@ body{
 .section2 .third_section .first_div .inner_div > .display_flex{
     /* padding: calc(6/1920 * 100vw); */
     align-items: flex-start;
-    width: 43%;
+    width: 44%;
 }
 .veg-meals{
     
@@ -393,7 +399,7 @@ body{
 
 }
 .section1 .third_section .first_div .content{
-    padding: 0  calc(35/1920 * 100vw) !important;
+    padding: 0  calc(55/1920 * 100vw) !important;
     margin-top: calc(12/1920 * 100vw) !important;
 
 }.section2 .third_section:nth-child(2) .first_div .nonveg-meals .content{
