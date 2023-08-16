@@ -34,6 +34,11 @@ div{
     background: #010151;
     padding: calc(5/1920 * 100vw);
 }
+.bg-brown{
+    background: #5C2D00;
+    margin-left: calc(60/1920 * 100vw);
+    padding: calc(5/1920 * 100vw) calc(10/1920 * 100vw);
+}
 @font-face {
     font-family: 'Gotham';
     src: url('Gotham-Medium.woff2') format('woff2'),
@@ -84,32 +89,63 @@ body{
     max-width: 1780px;
     margin: 0 auto;
     padding: calc(6/1920 * 100vw);
-    
+    align-items: flex-start;
 }
 .section1{
-    height: 53%;
+    height: 100%;
     align-items: flex-start;
 }
 .section > div{
     height: 100%;
 }
-.section .first_section{
-    width: 22%;
+.section1 .first_section{
+    width: 28%;
+    height: 25%;
     font-size: calc(40/1920 * 100vw);
     /* border: calc(1/1920 * 100vw) solid red; */
     /* background: red; */
 }
-.section .second_section{
-    width: 37%;
-    border-right: calc(1/1920 * 100vw) solid white;
+.section1 .second_section{
+    height:26%;
+    
 }
+.section1 .third_section{
+    height: 22%;
+    
+}
+.section1 .third_section .first_div{
+    height: 70%;
+    align-items: flex-start;
+}
+.section1 .third_section .first_div .heading{
+    padding: 0  calc(60/1920 * 100vw);
+
+}
+
+
+.section1 .second_section .first_div .content{
+    padding: 0 calc(40/1920 * 100vw);
+}
+.section1 .second_section .first_div .content .pizza_price{
+    justify-content: flex-end;
+    padding: 0 calc(20/1920 * 100vw);
+}
+
 .section  .first_div .heading{
     justify-content: flex-start;
-    padding:0 calc(15/1920 * 100vw);
+    /* padding:0 calc(15/1920 * 100vw); */
     font-family: 'Gotham';
 }
-.section  .third_section .first_div .heading{
-    padding:0 0 0  calc(15/1920 * 100vw);
+.section1  .first_div .heading{
+    justify-content: flex-start;
+    padding:0 calc(35/1920 * 100vw);
+    font-family: 'Gotham';
+}
+.section2 > .third_section:nth-child(1) > .first_div > .heading{
+    /* padding:0 0 0  calc(15/1920 * 100vw); */
+    width: 45%;
+    position: relative;
+    bottom: calc(10/1920 * 100vw);
 }
 .section  .first_div .heading div:nth-child(1){
     width: 70%;
@@ -125,67 +161,102 @@ body{
     width: 30%;
 }
 .section .first_div .content .pizza_info{
-    width: 70%;
+    width: 88%;
 }
 .section .third_section .first_div .content .pizza_info{
-    width: 90%;
+    width: 88%;
 }
 .section  .first_div .content .pizza_name{
     justify-content: flex-start;
     font-family: 'Gotham';
+    align-items: flex-start;
     
 }
 .section  .first_div .content .description{
     font-family: 'Gotham';
     font-size: calc(19/1920 * 100vw);
+    padding-left: calc(40/1920 * 100vw);
     
 }
 .section .first_div .content{
-    margin: calc(9/1920 * 100vw) calc(10/1920 * 100vw) 0 0;
+    margin: calc(9/1920 * 100vw) calc(10/1920 * 100vw) 0 calc(10/1920 * 100vw);
     padding: calc(5/1920 * 100vw) calc(15/1920 * 100vw);
     align-items: flex-start;
 
 }
-.section .third_section .first_div .content{
-    margin: calc(10/1920 * 100vw) calc(10/1920 * 100vw) 0 0;
-    padding: 0px 0px 0 calc(22/1920 * 100vw);
+.new_section .first_div {
+    width: 36%;
+
+}
+.new_section .first_div .content{
+    margin: calc(10/1920 * 100vw) calc(10/1920 * 100vw) 0 calc(40/1920 * 100vw);
+    padding: calc(5/1920 * 100vw) calc(15/1920 * 100vw);
     align-items: flex-start;
 
 }
-.section  .first_div .content .pizza_info .pizza_name p:nth-child(1){
+.new_section .first_div .content .pizza_name{
+    align-items: flex-start;
+
+}
+.new_section .first_div .content .pizza_name .display_flex {
+    justify-content: flex-start;
+
+}
+.new_section .first_div .content .pizza_name .display_flex p{
+    font-size: calc(32/1920 * 100vw);
+
+}
+.new_section .first_div .content .pizza_name > p{
+    font-size: calc(17/1920 * 100vw) !important;
+
+
+}
+.new_section .first_div .content .pizza_name img{
+    height: calc(20/1920 * 100vw);
+    width: calc(20/1920 * 100vw);
+
+
+}
+
+.section1 .third_section .first_div .content {
+    margin: calc(10/1920 * 100vw) calc(10/1920 * 100vw) 0 0 !important;
+}
+.section  .first_div .content .pizza_info .pizza_name > img{
+   width: calc(20/1920 * 100vw);
+   margin: calc(10/1920 * 100vw) calc(20/1920 * 100vw) 0 0 ;
+   /* vertical-align: sub; */
+}
+.section  .first_div .content .pizza_info .pizza_name p:nth-child(2){
    font-size: calc(32/1920 * 100vw);
    margin-right: calc(12/1920 * 100vw);
 }
-.section .first_div .content .pizza_info .pizza_name p:nth-child(2){
+.section .first_div .content .pizza_info .pizza_name p:nth-child(3){
    font-size: calc(17/1920 * 100vw);
    font-family: 'Gotham Light';
 
 }
-.section .first_div .content .pizza_info .pizza_name p:nth-child(2) span img{
+.section .first_div .content .pizza_info .pizza_name p:nth-child(3) span img{
    height: calc(20/1920 * 100vw);
    width: calc(20/1920 * 100vw);
+   margin-top: calc(10/1920 * 100vw);
 
 }
 .section  .first_div .content .pizza_price{
-    width: 29%;
+    width: unset;
     font-family: 'Gotham';
     font-size: calc(27/1920 * 100vw);
+    justify-content: flex-end;
 }
 .section  .first_div .heading img{
     width: calc(20/1920 * 100vw);
 
 }
-.section2 .second_div .first_div .heading img{
-    width: calc(20/1920 * 100vw);
-    margin-top: calc(10/1920 * 100vw);
-
-}
 .section .third_section{
-    width: 40%;
+    /* width: 48%; */
 }
 
 .section2{
-    height: 47%;
+    height: 100%;
 }
 .section2 .second_section{
     width: 48%;
@@ -204,29 +275,36 @@ body{
     margin-top: calc(13/1920 * 100vw);
 }
 .section2 .second_section .content .pizza_info{
-    width: 93%;
+    width: 80%;
     padding: 0 0 0 calc(10/1920 * 100vw);
 }
-.section2 .second_section .terms {
+.terms {
     padding: calc(8/1920 * 100vw) 0 0 calc(40/1920 * 100vw);
     font-family: 'Gotham Thin';
     font-size: calc(14/1920 * 100vw);
     align-items: flex-start;
+    height: 26%;
 }
-.section2 .second_section .terms img{
+.terms img{
     width: calc(10/1920 * 100vw);
     height: calc(15/1920 * 100vw);
     vertical-align: sub;
     margin: 0 calc(2/1920 * 100vw);
 }
 
-.section2 .second_section .content > img{
+.section2 .second_section .content img{
     width: calc(20/1920 * 100vw);
-    margin-top: calc(10/1920 * 100vw);
 }
-.section2 .third_section{
-    width: 37%;
-    padding: 0 calc(35/1920 * 100vw) 0 calc(45/1920 * 100vw);
+.section2 .third_section:nth-child(1){
+    height: 45%;
+    padding: 0 calc(35/1920 * 100vw) 0 calc(10/1920 * 100vw);
+}
+.section2 .new_section{
+    height: 34%;
+    align-items: flex-start;
+}
+.section2 .third_section:nth-child(2){
+    height: 19%;
 }
 .section2 .first_section{
     width: 24%;
@@ -235,7 +313,7 @@ body{
 
 .section2  .third_section h2:nth-child(1){
     width: 57%;
-    margin-left: calc(40/1920 * 100vw);
+    margin-left: calc(20/1920 * 100vw);
     font-family: 'Gotham';
 }
 .section2  .third_section h2:last-child{
@@ -250,25 +328,27 @@ body{
    position: relative;
    top: calc(-20/1920 * 100vw);
    z-index: -1;
+   align-items: flex-start;
 }
 .section2 .third_section .second_div{
 
 }
 .section2 .third_section .inner_div {
     font-family: 'Gotham';
-    padding: calc(20/1920 * 100vw) calc(10/1920 * 100vw) 0 calc(36/1920 * 100vw);
+    padding: calc(20/1920 * 100vw) calc(10/1920 * 100vw) 0 calc(20/1920 * 100vw);
 }
 .section2 .third_section .inner_div p{
     font-size:calc(27/1920 * 100vw);
+    width: 90%;
 }
-.section2 .third_section .first_div .inner_div .display_flex{
-    padding: calc(6/1920 * 100vw);
-    justify-content: flex-start;
+.section2 .third_section .first_div .inner_div > .display_flex{
+    /* padding: calc(6/1920 * 100vw); */
     align-items: flex-start;
+    width: 43%;
 }
 .veg-meals{
-    width: 70%;
-    border-right: calc(4/1920 * 100vw) solid blue;
+    
+    border-right: calc(4/1920 * 100vw) dotted blue;
 }
 .section2 .third_section .content {
     padding: 0 0 0 calc(15/1920 * 100vw) !important;
@@ -283,5 +363,18 @@ body{
 .section2 .third_section .second_div .inner_div p:nth-child(2){
     font-size: calc(40/1920 * 100vw);
     padding-bottom: calc(12/1920 * 100vw);
+}
+.section .third_section .first_div .content{
+    margin: calc(16/1920 * 100vw) calc(10/1920 * 100vw) 0 0 !important;
+    padding: 0px 0px 0 calc(22/1920 * 100vw);
+    align-items: flex-start;
+
+}
+.section1 .third_section .first_div .content{
+    padding: 0  calc(40/1920 * 100vw) !important;
+    margin-top: calc(12/1920 * 100vw) !important;
+
+}.section2 .third_section:nth-child(2) .first_div .nonveg-meals .content{
+    margin: 0 !important; 
 }
 
