@@ -88,7 +88,7 @@ html{
 body{
     height: 100vh;
     background-image: url('onlyBg.jpg');
-    background: linear-gradient(45deg,#01031A , rgba(255, 255, 255, 0) , #01031A  80%), url('onlyBg.jpg');
+    /* background: linear-gradient(45deg,#01031A , rgba(255, 255, 255, 0) , #01031A  80%), url('onlyBg.jpg'); */
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
