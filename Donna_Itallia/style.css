@@ -87,8 +87,7 @@ html{
 }
 body{
     height: 100vh;
-    background-image: url('onlyBg.jpg');
-    background: url('background.png');
+    background-image: url('background.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;

@@ -93,7 +93,6 @@ html{
 body{
     height: 100vh;
     background-image: url('background.png');
-    background: url('onlyBg.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
