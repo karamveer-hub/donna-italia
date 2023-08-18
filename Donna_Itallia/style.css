@@ -37,14 +37,7 @@ div{
 .fontRupee{
     font-family: 'ITF Rupee';
 }
-@font-face {
-    font-family: 'Trenda';
-    src: url('Gotham-Medium.woff2') format('woff2'),
-        url('Gotham-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: 'Trenda';
     src: url('Trenda-Bold.woff2') format('woff2'),
@@ -62,19 +55,20 @@ div{
     font-style: normal;
     font-display: swap;
 }
-
+@font-face {
+    font-family: 'Tranda Bold';
+    src: url('LatinotypeTrendaBold.otf');
+}
 @font-face {
     font-family: 'Gotham Thin';
-    src: url('Gotham-Thin.woff2') format('woff2'),
-        url('Gotham-Thin.woff') format('woff');
+    src: url('Gotham-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Gotham Light';
-    src: url('Gotham-Light.woff2') format('woff2'),
-        url('Gotham-Light.woff') format('woff');
+    src: url('Gotham-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -91,6 +85,7 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    /* background: white; */
 }
 .wrapper{
     height: 100%;
@@ -145,19 +140,26 @@ body{
     width: 30%;
 }
 .section .first_div .content .pizza_info{
-    width: 70%;
+    width: 80%;
+    align-items: flex-start;
 }
 .section .third_section .first_div .content .pizza_info{
     width: 90%;
+    align-items: flex-start;
 }
 .section  .first_div .content .pizza_name{
     justify-content: flex-start;
     font-family: 'Trenda';
     
 }
-.section  .first_div .content .description{
+.section  .first_div .content .description {
     font-family: 'Trenda';
     font-size: calc(19/1920 * 100vw);
+    width: 100%;
+    
+}
+.section  .first_div .content .description_pizza_gourmet {
+    width: 80%;
     
 }
 .section .first_div .content{
@@ -226,6 +228,7 @@ body{
 .section2 .second_section .content .pizza_info{
     width: 93%;
     padding: 0 0 0 calc(10/1920 * 100vw);
+    align-items: flex-start;
 }
 .section2 .second_section .terms {
     padding: calc(8/1920 * 100vw) 0 0 calc(40/1920 * 100vw);
