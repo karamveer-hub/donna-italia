@@ -60,17 +60,10 @@ div{
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Trenda';
-    src: url('Gotham-Medium.woff2') format('woff2'),
-        url('Gotham-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: 'Gotham Thin';
-    src: url('Gotham-Thin.woff2') format('woff2'),
+    src: 
         url('Gotham-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
@@ -78,8 +71,7 @@ div{
 }
 @font-face {
     font-family: 'Gotham Light';
-    src: url('Gotham-Light.woff2') format('woff2'),
-        url('Gotham-Light.woff') format('woff');
+    src: url('Gotham-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -320,7 +312,7 @@ body{
     width: calc(20/1920 * 100vw);
 }
 .section2 .third_section:nth-child(1){
-    height: 45%;
+    height: 46%;
     padding: 0 calc(35/1920 * 100vw) 0 calc(10/1920 * 100vw);
 }
 .section2 .new_section{
@@ -329,6 +321,7 @@ body{
 }
 .section2 .third_section:nth-child(2){
     height: 19%;
+    padding: 0 calc(30/1920 * 100vw);
 }
 .section2 .third_section:nth-child(2) .veg-meals .content{
     margin: 0 !important;
@@ -339,7 +332,7 @@ body{
 
 
 .section2  .third_section h2:nth-child(1){
-    width: 57%;
+    width: 44%;
     margin-left: calc(20/1920 * 100vw);
     font-family: 'Trenda';
 }
@@ -362,7 +355,7 @@ body{
 }
 .section2 .third_section .inner_div {
     font-family: 'Trenda';
-    padding: calc(20/1920 * 100vw) calc(0/1920 * 100vw) calc(10/1920 * 100vw) calc(20/1920 * 100vw);
+    padding: calc(22/1920 * 100vw) calc(0/1920 * 100vw) calc(20/1920 * 100vw) calc(20/1920 * 100vw);
 }
 .section2 .third_section .inner_div p{
     font-size:calc(27/1920 * 100vw);
@@ -392,13 +385,13 @@ body{
     padding-bottom: calc(12/1920 * 100vw);
 }
 .section .third_section .first_div .content{
-    margin: calc(16/1920 * 100vw) calc(10/1920 * 100vw) 0 0 !important;
+    margin: calc(26/1920 * 100vw) calc(10/1920 * 100vw) 0 0 !important;
     padding: 0px 0px 0 calc(22/1920 * 100vw);
     align-items: flex-start;
 
 }
 .section1 .third_section .first_div .content{
-    padding: 0  calc(55/1920 * 100vw) !important;
+    padding: 0 calc(55/1920 * 100vw) 0 calc(35/1920 * 100vw) !important;
     margin-top: calc(12/1920 * 100vw) !important;
 
 }.section2 .third_section:nth-child(2) .first_div .nonveg-meals .content{
