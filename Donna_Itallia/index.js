@@ -63,6 +63,7 @@ function htmlfunction(data) {
     gourmet_pizza_12inch = document.querySelectorAll('.gourmet_pizza_12inch');
     gourmet_pizza_calorie = document.querySelectorAll('.gourmet_pizza_calorie');
     let description_pizza_gourmet = document.querySelectorAll('.description_pizza_gourmet p');
+    let category_gourmet = document.querySelectorAll('.category_gourmet');
     // console.log(pizza_veg_7inch[0],pizza_veg_7inch[1],pizza_veg_7inch[2],pizza_veg_7inch[3],pizza_veg_7inch[4])
     // let string=" ";
 
@@ -160,6 +161,16 @@ function htmlfunction(data) {
     description_pizza_gourmet.forEach((element, i) => {
         element.innerText = data[i].gourmet_pizza_description
     });
+    category_gourmet.forEach((element,index)=>{
+        let c = []
+        c = window.location.href.split("/")
+        c.pop()
+        let d= c
+        let e= d.splice(2)
+        for (let i = 0; i < data[index].category_gourmet.split(",").length; i++) {
+          element.src=d[0]+'//'+e.join("/")+'/'+data[index].category_gourmet.split(",")[i] + '.svg'
+        }
+      })
     
     for (let i = 0; i < data.length; i++) {
 
