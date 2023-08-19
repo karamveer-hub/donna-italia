@@ -75,7 +75,9 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let d= c
         let e= d.splice(2)
         for (let i = 0; i < data[index].category_pasta_veg.split(",").length; i++) {
+          data[index].category_pasta_veg!=""?
           element.src=d[0]+'//'+e.join("/")+'/'+data[index].category_pasta_veg.split(",")[i] + '.svg'
+          :null
         }
 
       })
@@ -99,7 +101,9 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let d= c
         let e= d.splice(2)
         for (let i = 0; i < data[index].category_pasta_nonveg.split(",").length; i++) {
+          data[index].category_pasta_nonveg!=""?
           element.src=d[0]+'//'+e.join("/")+'/'+data[index].category_pasta_nonveg.split(",")[i] + '.svg'
+          :null
         }    
       })
 
@@ -120,7 +124,9 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let d= c
         let e= d.splice(2)
         for (let i = 0; i < data[index].category_quickbites.split(",").length; i++) {
+          data[index].category_quickbites!=""?
           element.src=d[0]+'//'+e.join("/")+'/'+data[index].category_quickbites.split(",")[i] + '.svg'
+          :null
         }
       })
 
@@ -137,7 +143,9 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let d= c
         let e= d.splice(2)
         for (let i = 0; i < data[index].category_dessert.split(",").length; i++) {
+          data[index].category_dessert!=""?
           element.src=d[0]+'//'+e.join("/")+'/'+data[index].category_dessert.split(",")[i] + '.svg'
+          :null
         }
       })
 
@@ -150,7 +158,9 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let e= d.splice(2)
 
         for (let i = 0; i < data[index].allergens_pasta_veg.split(",").length; i++) {
+                data[index].allergens_pasta_veg!=""?
                 string+=`<img src="${d[0]+'//'+e.join("/")+'/'+data[index].allergens_pasta_veg.split(",")[i] + '.svg'}" alt="">`
+                :null
         }
         element.children[1].innerHTML=string
     });
@@ -163,7 +173,9 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let e= d.splice(2)
 
         for (let i = 0; i < data[index].allergens_pasta_nonveg.split(",").length; i++) {
+                data[index].allergens_pasta_nonveg!=""?
                 string+=`<img src="${d[0]+'//'+e.join("/")+'/'+data[index].allergens_pasta_nonveg.split(",")[i] + '.svg'}" alt="">`
+                :null
         }
         element.children[1].innerHTML=string
     });
@@ -176,7 +188,9 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let e= d.splice(2)
 
         for (let i = 0; i < data[index].allergens_quickbites.split(",").length; i++) {
+                data[index].allergens_quickbites!=""?
                 string+=`<img src="${d[0]+'//'+e.join("/")+'/'+data[index].allergens_quickbites.split(",")[i] + '.svg'}" alt="">`
+                :null
         }
         element.children[1].innerHTML=string
     });
@@ -189,7 +203,9 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let e= d.splice(2)
 
         for (let i = 0; i < data[index].allergens_desserts.split(",").length; i++) {
+                data[index].allergens_desserts!=""?
                 string+=`<img src="${d[0]+'//'+e.join("/")+'/'+data[index].allergens_desserts.split(",")[i] + '.svg'}" alt="">`
+                :null
         }
         element.children[1].innerHTML=string
     });
