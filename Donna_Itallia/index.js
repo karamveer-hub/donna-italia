@@ -92,7 +92,7 @@ function htmlfunction(data) {
         console.log(index)
         console.log(data[index].allergens_pizza_veg.split(",").length)
         for(let i = 0; i < data[index].allergens_pizza_veg.split(",").length; i++) {
-            string+=`<img src="${d[0] + '//' + e.join("") + '/' + data[index].allergens_pizza_veg.split(",")[i] + '.svg'}" alt="">`
+            string+=`<img src="${d[0] + '//' + e.join("/") + '/' + data[index].allergens_pizza_veg.split(",")[i] + '.svg'}" alt="">`
         }
         element.children[1].innerHTML=string
         console.log(string)
@@ -106,7 +106,7 @@ function htmlfunction(data) {
         let e= d.splice(2)
 
         for (let i = 0; i < data[index].allergens_pizza_veg.split(",").length; i++) {
-                string+=`<img src="${d[0] + '//' + e.join("") + '/' + data[index].allergens_pizza_nonveg.split(",")[i] + '.svg'}" alt="">`
+                string+=`<img src="${d[0] + '//' + e.join("/") + '/' + data[index].allergens_pizza_nonveg.split(",")[i] + '.svg'}" alt="">`
         }
         element.children[1].innerHTML=string
     });
@@ -120,7 +120,7 @@ function htmlfunction(data) {
         console.log(data[index].allergens_pizza_gourmet.split(",").length)
         
         for (let i = 0; i < data[index].allergens_pizza_gourmet.split(",").length; i++) {
-                string+=`<img src="${d[0] + '//' + e.join("") + '/' + data[index].allergens_pizza_gourmet.split(",")[i] + '.svg'}" alt="">`
+                string+=`<img src="${d[0] + '//' + e.join("/") + '/' + data[index].allergens_pizza_gourmet.split(",")[i] + '.svg'}" alt="">`
         }
         element.children[1].innerHTML=string
     });
