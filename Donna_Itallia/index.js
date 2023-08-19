@@ -23,11 +23,17 @@ let veg_meals
 let nonveg_meals
 let addon_cheese
 let addon_veggies
+let pizza_veg_7inch
 let pizza_veg_12inch
 let pizza_nonveg_7inch
 let pizza_nonveg_12inch
 let pizza_gourmet_7inch
 let pizza_gourmet_12inch
+let description_pizza_veg
+let description_pizza_nonveg
+let pizza_veg_allergens
+let pizza_nonveg_allergens
+let allergens_image_gourmet
 
 
 function htmlfunction(data) {
@@ -39,19 +45,21 @@ function htmlfunction(data) {
     addon_veggies = document.querySelector('.addon_veggies');
     pizza_veg_7inch = document.querySelectorAll('.pizza_veg_inch7');
     pizza_veg_name = document.querySelectorAll('.pizza_veg_name');
-    pizza_veg_calories = document.querySelectorAll('.pizza_veg_calories');
+    let pizza_veg_calories = document.querySelectorAll('.pizza_veg_calories');
     pizza_veg_allergens = document.querySelectorAll('.allergens_image');
-    let description_pizza_veg = document.querySelectorAll('.description_pizza_veg p');
+    description_pizza_veg = document.querySelectorAll('.description_pizza_veg p');
     pizza_veg_12inch = document.querySelectorAll('.pizza_veg_inch12');
 
     pizza_nonveg_7inch = document.querySelectorAll('.pizza_nonveg_inch7');
-    pizza_nonveg_calorie = document.querySelectorAll('.pizza_nonveg_calorie');
-    let description_pizza_nonveg = document.querySelectorAll('.description_pizza_nonveg p');
+    let pizza_nonveg_calorie = document.querySelectorAll('.pizza_nonveg_calorie');
+    description_pizza_nonveg = document.querySelectorAll('.description_pizza_nonveg p');
     pizza_nonveg_name = document.querySelectorAll('.pizza_nonveg_name');
     pizza_nonveg_12inch = document.querySelectorAll('.pizza_nonveg_inch12');
+    pizza_nonveg_allergens = document.querySelectorAll('.allergens_image_nonveg');
 
+    allergens_image_gourmet = document.querySelectorAll('.allergens_image_gourmet');
     gourmet_pizza_name = document.querySelectorAll('.gourmet_pizza_name');
-    pizza_gourmet_inch7 = document.querySelectorAll('.pizza_gourmet_inch7');
+    let pizza_gourmet_inch7 = document.querySelectorAll('.pizza_gourmet_inch7');
     gourmet_pizza_12inch = document.querySelectorAll('.gourmet_pizza_12inch');
     gourmet_pizza_calorie = document.querySelectorAll('.gourmet_pizza_calorie');
     let description_pizza_gourmet = document.querySelectorAll('.description_pizza_gourmet p');
@@ -71,14 +79,53 @@ function htmlfunction(data) {
         element.innerText = data[i].pizza_veg_calories
     });
     description_pizza_veg.forEach((element, i) => {
-        element.src = data[i].pizza_veg_description
-        
+        element.innerText = data[i].pizza_veg_description
     })
     
-    pizza_veg_allergens.forEach((element, i) => {
-        element.children[1].children[i].src=window.location.href  + data[i].allergens_pizza_veg.split(",")[i] + '.png'
+    pizza_veg_allergens.forEach((element, index) => {
+        let string="";
+        let c = []
+        c = window.location.href.split("/")
+        c.pop()
+        let d= c
+        let e= d.splice(2)
+        console.log(index)
+        console.log(data[index].allergens_pizza_veg.split(",").length)
+        for(let i = 0; i < data[index].allergens_pizza_veg.split(",").length; i++) {
+            string+=`<img src="${d[0] + '//' + e.join("") + '/' + data[index].allergens_pizza_veg.split(",")[i] + '.svg'}" alt="">`
+        }
+        element.children[1].innerHTML=string
+        console.log(string)
     });
+    pizza_nonveg_allergens.forEach((element, index) => {
+        let string="";
+        let c = []
+        c = window.location.href.split("/")
+        c.pop()
+        let d= c
+        let e= d.splice(2)
 
+        for (let i = 0; i < data[index].allergens_pizza_veg.split(",").length; i++) {
+                string+=`<img src="${d[0] + '//' + e.join("") + '/' + data[index].allergens_pizza_nonveg.split(",")[i] + '.svg'}" alt="">`
+        }
+        element.children[1].innerHTML=string
+    });
+    allergens_image_gourmet.forEach((element, index) => {
+        let string="";
+        let c = []
+        c = window.location.href.split("/")
+        c.pop()
+        let d= c
+        let e= d.splice(2)
+        console.log(data[index].allergens_pizza_gourmet.split(",").length)
+        
+        for (let i = 0; i < data[index].allergens_pizza_gourmet.split(",").length; i++) {
+                string+=`<img src="${d[0] + '//' + e.join("") + '/' + data[index].allergens_pizza_gourmet.split(",")[i] + '.svg'}" alt="">`
+        }
+        element.children[1].innerHTML=string
+    });
+    
+    
 
 
     pizza_nonveg_name.forEach((element, i) => {
@@ -96,6 +143,7 @@ function htmlfunction(data) {
     description_pizza_nonveg.forEach((element, i) => {
         element.innerText = data[i].pizza_nonveg_description
     });
+  
 
     pizza_gourmet_inch7.forEach((element, i) => {
         element.innerText = data[i].gourmet_pizza_7inch
@@ -112,6 +160,7 @@ function htmlfunction(data) {
     description_pizza_gourmet.forEach((element, i) => {
         element.innerText = data[i].gourmet_pizza_description
     });
+    
     for (let i = 0; i < data.length; i++) {
 
         data[i].veg_meals != "" ? veg_meals.innerText = data[i].veg_meals : null

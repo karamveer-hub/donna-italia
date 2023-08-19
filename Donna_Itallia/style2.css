@@ -230,7 +230,7 @@ body{
 .new_section .first_div .content .pizza_name img{
     height: calc(20/1920 * 100vw);
     width: calc(20/1920 * 100vw);
-
+    margin-right: calc(5/1920 * 100vw);
 
 }
 
