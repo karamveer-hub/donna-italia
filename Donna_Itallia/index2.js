@@ -75,7 +75,7 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let d= c
         let e= d.splice(2)
         for (let i = 0; i < data[index].category_pasta_veg.split(",").length; i++) {
-          element.src=d[0] + '//' + e.join("") + '/' + data[index].category_pasta_veg.split(",")[i] + '.svg'
+          element.src=d[0]+'//'+e.join("/")+'/'+data[index].allergens_pizza_gourmet.split(",")[i] + '.svg'
         }
 
       })
@@ -99,7 +99,7 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let d= c
         let e= d.splice(2)
         for (let i = 0; i < data[index].category_pasta_nonveg.split(",").length; i++) {
-          element.src=d[0] + '//' + e.join("") + '/' + data[index].category_pasta_nonveg.split(",")[i] + '.svg'
+          element.src=d[0]+'//'+e.join("/")+'/'+data[index].allergens_pizza_gourmet.split(",")[i] + '.svg'
         }    
       })
 
@@ -120,7 +120,7 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let d= c
         let e= d.splice(2)
         for (let i = 0; i < data[index].category_quickbites.split(",").length; i++) {
-          element.src=d[0] + '//' + e.join("") + '/' + data[index].category_quickbites.split(",")[i] + '.svg'
+          element.src=d[0]+'//'+e.join("/")+'/'+data[index].allergens_pizza_gourmet.split(",")[i] + '.svg'
         }
       })
 
@@ -137,7 +137,7 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let d= c
         let e= d.splice(2)
         for (let i = 0; i < data[index].category_dessert.split(",").length; i++) {
-          element.src=d[0] + '//' + e.join("") + '/' + data[index].category_dessert.split(",")[i] + '.svg'
+          element.src=d[0]+'//'+e.join("/")+'/'+data[index].allergens_pizza_gourmet.split(",")[i] + '.svg'
         }
       })
 
@@ -150,7 +150,7 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let e= d.splice(2)
 
         for (let i = 0; i < data[index].allergens_pasta_veg.split(",").length; i++) {
-                string+=`<img src="${d[0] + '//' + e.join("") + '/' + data[index].allergens_pasta_veg.split(",")[i] + '.svg'}" alt="">`
+                string+=`<img src="${d[0]+'//'+e.join("/")+'/'+data[index].allergens_pizza_gourmet.split(",")[i] + '.svg'}" alt="">`
         }
         element.children[1].innerHTML=string
     });
@@ -163,7 +163,7 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let e= d.splice(2)
 
         for (let i = 0; i < data[index].allergens_pasta_nonveg.split(",").length; i++) {
-                string+=`<img src="${d[0] + '//' + e.join("") + '/' + data[index].allergens_pasta_nonveg.split(",")[i] + '.svg'}" alt="">`
+                string+=`<img src="${d[0]+'//'+e.join("/")+'/'+data[index].allergens_pizza_gourmet.split(",")[i] + '.svg'}" alt="">`
         }
         element.children[1].innerHTML=string
     });
@@ -176,7 +176,7 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let e= d.splice(2)
 
         for (let i = 0; i < data[index].allergens_quickbites.split(",").length; i++) {
-                string+=`<img src="${d[0] + '//' + e.join("") + '/' + data[index].allergens_quickbites.split(",")[i] + '.svg'}" alt="">`
+                string+=`<img src="${d[0]+'//'+e.join("/")+'/'+data[index].allergens_pizza_gourmet.split(",")[i] + '.svg'}" alt="">`
         }
         element.children[1].innerHTML=string
     });
@@ -189,7 +189,7 @@ let category_dessert=document.querySelectorAll('.category_dessert')
         let e= d.splice(2)
 
         for (let i = 0; i < data[index].allergens_desserts.split(",").length; i++) {
-                string+=`<img src="${d[0] + '//' + e.join("") + '/' + data[index].allergens_desserts.split(",")[i] + '.svg'}" alt="">`
+                string+=`<img src="${d[0]+'//'+e.join("/")+'/'+data[index].allergens_pizza_gourmet.split(",")[i] + '.svg'}" alt="">`
         }
         element.children[1].innerHTML=string
     });
@@ -201,8 +201,8 @@ let category_dessert=document.querySelectorAll('.category_dessert')
       for (let i = 0; i < data.length; i++) {
         data[i].veg_meals!=""?veg_meals.innerText=data[i].veg_meals:null
         data[i].nonveg_meals!=""?nonveg_meals.innerText=data[i].nonveg_meals:null
-        data[i].category_veg_meals!=""?category_veg_meals.src=d[0] + '//' + e.join("") + '/' + data[i].category_veg_meals.split(",")[i] + '.svg':null
-        data[i].category_nonveg_meals!=""?category_nonveg_meals.src=d[0] + '//' + e.join("") + '/' + data[i].category_nonveg_meals.split(",")[i] + '.svg':null
+        data[i].category_veg_meals!=""?category_veg_meals.src=d[0] + '//' + e.join("/") + '/' + data[i].category_veg_meals.split(",")[i] + '.svg':null
+        data[i].category_nonveg_meals!=""?category_nonveg_meals.src=d[0] + '//' + e.join("/") + '/' + data[i].category_nonveg_meals.split(",")[i] + '.svg':null
 
       }
     }
